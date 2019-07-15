@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.MaterialComponents"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="My Profile" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="32dp"
+            android:padding="4dp"
+            android:src="@drawable/image"
+            app:layout_constraintBottom_toTopOf="@id/middle_guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/middle_guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent=".5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/middle_guideline" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelTrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_track"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/active_track"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/labelName" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelCountry"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_near_me"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/country_nigeria"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/labelTrack" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/active_email"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/labelCountry" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/active_phone"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/labelEmail" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelSlackUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:drawableStart="@drawable/ic_mouse"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/username"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/labelPhoneNumber" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ALC Android Challenge</string>
+    <string name="my_profile">My Profile</string>
+    <string name="about_alc">About ALC</string>
+    <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+    <string name="name">Ugochukwu Ameh</string>
+    <string name="active_track">Android</string>
+    <string name="country_nigeria">Nigeria</string>
+    <string name="active_email">amehugochukwu@gmail.com</string>
+    <string name="active_phone">+234 706 742 0774</string>
+    <string name="username">\@onwa1kenobi</string>
+</resources>
